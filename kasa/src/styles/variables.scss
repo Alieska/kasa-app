@@ -1,0 +1,13 @@
+$main-color: #ff6060;
+$footer-color: #000000;
+
+$main-font: Montserrat;
+
+@mixin fleche {
+      position: absolute;
+      top: 50%;
+      width: 47px;
+      @media screen and (max-width: 768px) {
+            width: 20px;
+      }
+}

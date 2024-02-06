@@ -1,42 +1,41 @@
-.error-page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    &_title{
-        color: $main-color;
-        text-align: center;
-        font-family: $main-font;
-        font-size: 288px;
-        font-style: normal;
-        font-weight: 700;
-        margin: 0;
-        @media screen and (max-width: 768px) {
-            font-size: 96px;
-        }
-    }
-    &_text{
-        color: $main-color;
-        font-family: $main-font;
-        text-align: center;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 500;
-        @media screen and (max-width: 768px) {
+.error-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-shrink: 0;
+      &_title {
+            color: $main-color;
+            text-align: center;
+            font-family: $main-font;
+            font-size: 288px;
+            font-style: normal;
+            font-weight: 700;
+            margin: 0;
+            @media screen and (max-width: 768px) {
+                  font-size: 96px;
+            }
+      }
+      &_text {
+            color: $main-color;
+            font-family: $main-font;
+            text-align: center;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            @media screen and (max-width: 768px) {
+                  font-size: 18px;
+            }
+      }
+      &_link {
+            color: $main-color;
+            font-family: $main-font;
+            text-align: center;
             font-size: 18px;
-        }
-
-    }
-    &_link{
-        color: $main-color;
-        font-family: $main-font;
-        text-align: center;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        text-decoration-line: underline;
-        @media screen and (max-width: 768px) {
-            font-size: 14px;
-        }
-    }
+            font-style: normal;
+            font-weight: 500;
+            text-decoration-line: underline;
+            @media screen and (max-width: 768px) {
+                  font-size: 14px;
+            }
+      }
 }
