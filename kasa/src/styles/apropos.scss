@@ -1,0 +1,10 @@
+.apropos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+        gap: 20px;}
+}

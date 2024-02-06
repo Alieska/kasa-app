@@ -1,0 +1,77 @@
+.collapse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 83%;
+  @media screen and (max-width: 768px) {
+    width: 100%;}
+
+  &_barreTitre {
+    width: 100%;
+    display: flex;
+    height: 52px;
+    padding: 10px 20px 10px 15px;
+    align-items: center;
+    border-radius: 5px;
+    background: var(--Red, $main-color);
+    flex-direction: row;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      height: 30px;}
+
+    &_titre{
+      color: #fff;
+      font-family: $main-font;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      @media screen and (max-width: 768px) {
+        font-size: 13px;
+    }
+    }
+
+    &_bouton {
+      display: block;
+      background-color: $main-color;
+      border: none;}
+
+      &_bouton-active {
+        display: block;
+        background-color: $main-color;
+        border: none;
+        rotate: 180deg;
+      }
+
+      &_fleche {
+        width: 24px;
+        flex-shrink: 0;
+        color: #fff;
+        rotate: 0deg;
+        @media screen and (max-width: 768px) {
+          width: 16px;
+      }
+      }}
+
+  &_divparagraphe{
+    width: 100%;
+  }
+
+  &_paragraphe {
+    align-items: center;
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 10px 10px 5px 5px;
+    background: var(--Gray, #f6f6f6);
+    margin: 0;
+    padding: 10px 20px 10px 15px;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+      width: 100%;
+  }
+  }
+}

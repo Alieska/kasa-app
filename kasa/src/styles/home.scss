@@ -1,0 +1,18 @@
+.ListCards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 60px;
+    border-radius: 25px;
+    background: #F6F6F6;
+    padding: 50px;
+    @media screen and (max-width: 768px) {
+		gap: 27px;
+		padding: 20px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+	}
+}
