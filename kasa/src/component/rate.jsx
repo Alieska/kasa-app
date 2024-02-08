@@ -1,6 +1,5 @@
 import GreyStar from '../assets/GreyStar.svg'
 import RedStar from '../assets/RedStar.svg'
-import React from 'react'
 
 const StarsRate = ({ rate_number_annonce }) => {
       const maxRate = [1, 2, 3, 4, 5]

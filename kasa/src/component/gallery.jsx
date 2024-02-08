@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react'
 import fleche from '../assets/arrow_back_ios-24px2.svg'
 

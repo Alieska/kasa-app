@@ -10,14 +10,10 @@ const TextAnnonce = () => {
       const { id } = useParams()
 
       const cetteAnnonce = ListAnnonces.find((annonce) => annonce.id === id)
-      if (cetteAnnonce === undefined) {
-            return <ErrorPage />
-      }
 
       const equipements = cetteAnnonce?.equipments.map((equipement, index) => (
             <li className="listeEquipements" key={index}>
-                  {' '}
-                  {equipement}{' '}
+                  {equipement}
             </li>
       ))
 
@@ -30,7 +26,9 @@ const TextAnnonce = () => {
       ))
 
       const rating = cetteAnnonce?.rating
+
       const listImage = cetteAnnonce?.pictures
+
       const nomProprietaire = cetteAnnonce?.host.name
       const tableauNomProprietaire = nomProprietaire.split(` `)
       const textNom = tableauNomProprietaire.map((nom, index) => (

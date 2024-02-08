@@ -1,5 +1,5 @@
 import fleche from '../assets/arrow_back_ios-24px2.svg'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const Toggle = ({ TitreParagraphe, TextApropos }) => {
       const [isToggleOn, setIsToggleOn] = useState(false)

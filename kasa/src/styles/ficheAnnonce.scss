@@ -57,6 +57,10 @@
             &_divEnTete {
                   display: flex;
                   flex-direction: column;
+                  width: 80%;
+                  @media screen and (max-width: 768px) {
+                        width: 100%;
+                  }
 
                   &_divTitre {
                         &_titre {
@@ -132,11 +136,12 @@
                   flex-direction: column;
                   align-items: end;
                   gap: 10px;
-                  width: 100%;
+                  width: 20%;
                   @media screen and (max-width: 768px) {
                         flex-direction: row-reverse;
                         justify-content: space-between;
                         align-items: center;
+                        width: 100%;
                   }
 
                   &_proprietaire {
