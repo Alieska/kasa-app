@@ -11,6 +11,10 @@ const TextAnnonce = () => {
 
       const cetteAnnonce = ListAnnonces.find((annonce) => annonce.id === id)
 
+      if (cetteAnnonce === undefined) {
+            return <ErrorPage />
+      }
+
       const equipements = cetteAnnonce?.equipments.map((equipement, index) => (
             <li className="listeEquipements" key={index}>
                   {equipement}
