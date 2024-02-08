@@ -1,14 +1,14 @@
 import Card from '../component/card'
 import Banner from '../component/banner'
 import Annonces from '../data/annonces.json'
-import imageAccueil from '../assets/paysage_rivage_mer_rochers.jpg'
-
-const sloganAccueil = 'Chez vous, partout et ailleurs'
 
 function Home() {
       return (
             <main>
-                  <Banner image={imageAccueil} slogan={sloganAccueil} />
+                  <Banner
+                        image="/src/assets/paysage_rivage_mer_rochers.jpg"
+                        slogan="Chez vous, partout et ailleurs"
+                  />
                   <div className="ListCards">
                         {Annonces.map((annonce, index) => (
                               <Card

@@ -1,4 +1,7 @@
-function Banner({ image, slogan }) {
+function Banner(props) {
+      const image = props.image
+      const slogan = props.slogan
+
       return (
             <div className="banner">
                   <div className="banner_opacity"></div>
